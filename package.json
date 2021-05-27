@@ -1,0 +1,14 @@
+{
+  "name": "cryptorelief",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "comp-supply": "node ./comp/comp-supply-eth.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.3.6"
+  }
+}
