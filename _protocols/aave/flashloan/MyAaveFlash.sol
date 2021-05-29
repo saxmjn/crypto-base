@@ -4,6 +4,11 @@ import "https://raw.githubusercontent.com/aave/protocol-v2/master/contracts/flas
 import "https://raw.githubusercontent.com/aave/protocol-v2/master/contracts/interfaces/ILendingPoolAddressesProvider.sol";
 import "https://raw.githubusercontent.com/aave/protocol-v2/master/contracts/interfaces/ILendingPool.sol";
 
+//
+// REFERENCE FROM
+// https://github.com/aave/code-examples-protocol/tree/main/V2/Flash%20Loan%20-%20Batch
+//
+
 contract MyAaveFlashLoan is FlashLoanReceiverBase {
     constructor(address _addressProvider) FlashLoanReceiverBase(_addressProvider) public {}
     

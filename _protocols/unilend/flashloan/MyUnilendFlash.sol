@@ -12,6 +12,12 @@ contract MyUnilendFlashLoan is UnilendFlashLoanReceiverBase {
     /**
         This function is called after your contract has received the flash loaned amount
      */
+     event Borrowed(
+        address indexed _from,
+        bytes32 indexed _id,
+        uint _value
+    );
+
     function executeOperation(
         address _asset,
         uint256 _amount,
@@ -19,6 +25,7 @@ contract MyUnilendFlashLoan is UnilendFlashLoanReceiverBase {
         bytes calldata _params
     )
         external{
+            emit Deposit(msg.sender, _id, msg.value);
             // Check if the _amount is less than balance of _asset in user account
             require(_amount <= getBalanceInternal(address(this), _asset),
             "Invalid balance, was the flashLoan successful?");
