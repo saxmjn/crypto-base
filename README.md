@@ -13,3 +13,8 @@ https://docs.unilend.finance/flash-loans
 
 UNISWAP
 https://github.com/Austin-Williams/uniswap-flash-swapper
+
+
+DYDX
+https://gist.github.com/cryptoscopia/1156a368c19a82be2d083e04376d261e
+
